@@ -373,7 +373,7 @@ local signature_handler = function(err, result, ctx, config)
   end
 
   -- trim the doc
-  if _LSP_SIG_CFG.doc_lines == 0 and config.trigger_from_lsp_sig then -- doc disabled
+  if _LSP_SIG_CFG.doc_lines == 0 then -- doc disabled
     helper.remove_doc(result)
   end
 
